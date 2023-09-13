@@ -1,0 +1,196 @@
+@import url(&#39;http:fonts.googleapis.com/css2?family=Poppins:weight@300;400;500;600,700;800,900&amp;display=swap&#39;);
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header{
+  padding: 40px;
+  text-align: center;
+  background:pink;
+  color: white;
+  font-size: 40px;
+	}
+.logo{
+font-size: 25px;
+color: azure;
+text-decoration: none;
+font-weight: 700;
+}
+.navbar a {
+font-size: 18px;
+color: azure;
+text-decoration: none;
+font-weight: 500;
+margin-left: 35px;
+transition: .3s;
+height: 30vh;
+}
+.navbar a:hover,
+.navbar a.active {
+color: aqua;
+}
+
+.home {
+height: 100vh;
+background-color:cadetblue;
+display: flex;
+justify-content: space-between;
+padding: 0 10%;
+align-items: center;
+}
+
+.home-image img{
+position: relative;
+bottom:22px;
+max-width: 500px;
+max-height: 500px;
+border-radius:50%;
+
+}
+
+.home-content{
+max-width: 600px;
+color: beige;
+text-align: right;
+}
+.home-content h1{
+font-size: 45px;
+line-height: 1.2;
+}
+.home-content h3
+{
+font-size: 30px;
+color:transparent;
+-webkit-text-stroke: .4px white;
+background-image: linear-gradient(lightblue,lightblue );
+background-repeat: no-repeat;
+-webkit-background-clip: text;
+background-position: -410px 0;
+animation: animateText 6s linear infinite;
+}
+@keyframes animateText{
+0%,95%,100%{
+background-position: -410px 0;
+}
+65%,85%{
+background-position: 0 0;
+}
+}
+.home-content p{
+font-size: 16px;
+margin-top: 20px;
+}
+.home-sci{
+margin: 25px 0 40px;
+}
+.home-sci a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+background: transparent;
+border: 2px solid white;
+border-radius: 50%;
+font-size: 20px;
+color: aqua;
+text-decoration: none;
+margin-left: 12px;
+transition: 5s;
+}
+.home-sci a:hover{
+background: aqua;
+color:white;
+border-color: aqua;
+box-shadow: 0 0 10px aqua;
+}
+.btn {
+padding: 12px 35px;
+background: aqua;
+border-radius: 40px;
+font-size: 17px;
+color:white;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 1px;
+box-shadow: 0 0 10px aqua;
+transition: .5s;
+}
+.btn:hover{
+box-shadow: none;
+}
+.header1-image {
+	background-size: cover;
+	background-position: center;
+	background-repeat:repeat;
+	
+}
+.image > img {
+    height: 50vh;
+    max-width: 100%;
+}
+.container{
+position: absolute;
+width: auto;
+
+
+}
+
+.homepage {
+	height: 38vh;
+	background-color:white;
+    text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+	
+	
+	}
+	.homepage-content{
+		color:black;
+		font-style:normal;
+		font-size:medium;
+	}
+	h3 {
+		text-align: center;
+		text-shadow: #2196f3;
+	
+	 }
+	 .container {
+		width: 100%;
+		background-color: rgb(231, 231, 231);
+		border-radius: 20px;
+		height: 15vh;
+
+	 }
+	 .cpp, .java, .python, .c, .PhP {
+		text-align: center;
+		font-weight: bolder;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		color: white;
+		border-radius: 20px;
+	 }
+	 .cpp {
+		width: 90%;
+		background-color: #4caf50;
+		
+	 }
+	 .java {
+		width: 80%;
+		background-color: #2196f3;
+	 }
+	 .python {
+		width: 65%;
+		background-color: #f44336;
+	}
+	.c {
+	   width: 60%;
+	   background-color:brown;
+	}
+	.PhP {
+
+		width: 95%;
+		background-color: blueviolet;
+	}

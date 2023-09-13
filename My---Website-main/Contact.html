@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+    </head>
+    <body>
+
+        <header class="header">
+        <a href="#" class="logo"></a>
+        <nav class="navbar">
+        <a href="home.html"class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Services</a>
+        <a href="Contact.html">Contacts</a>
+    
+    </nav> 
+    </header>    
+    <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>CONTACT</span>
+                  <span>ME</span>
+                </div>
+                <div class="app-contact">CONTACT INFO : +71 8022 736</div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" pattern="[A-Za-z]+" title="Only alphabetic characters are allowed" required>
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL" required>
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO" required>
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE">
+                  </div>
+                  <div class="app-form-group buttons">
+                    <button class="cancel" onclick="window.location.href = 'contact-form';">Cancel</button>
+                  </div>
+                    <button class="submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            function validateForm() {
+          var NAME = document.forms["contact"]["name"].value;
+          var EMAIL = document.forms["contact"]["email"].value;
+          var CONTACTNUMBER = document.forms["contact no"].value
+          var MESSAGE = document.forms["contactForm"]["message"].value;
+          var error = "";
+      
+          if (name == "") {
+              error += "Please enter your name.\n";
+          }
+      
+          if (email == "") {
+              error += "Please enter your email address.\n";
+          } else if (!validateEmail(email)) {
+              error += "Please enter a valid email address.\n";
+          }
+      
+          if (message == "") {
+              error += "Please enter a message.\n";
+          }
+      
+          if (error != "") {
+              alert(error);
+              return false;
+          }
+      }
+      
+      function PHONENUMBER(inputtxt)
+      {
+        var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+        if(inputtxt.value.match(phoneno))
+              {
+            return true;
+              }
+            else
+              {
+              alert("message");
+              return false;
+              }
+      
+      }
+      
+      function validateEmail(email) {
+          var re = /\S+@\S+\.\S+/;
+          return re.test(email);
+      }
+      
+      
+           </script>
+     </body>
+    </html>
